@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Pets</title>
+    <link rel="stylesheet" href="css/cards.css">
+</head>
+
+<body>
+    <header>
+        <!-- Logo da sua loja de pets -->
+        <img src="https://www.creativefabrica.com/wp-content/uploads/2021/04/10/Pet-shop-animals-logo-template-Graphics-10636868-1-1-580x386.png" alt="Logo da Loja de Pets" class="logo">
+
+        <!-- Opções de navegação e barra de pesquisa -->
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="_blank">Pagina Inicial</a></li>
+                    <li><a href="cadastro.html" target="_blank">Cadastro</a></li>
+                    <li><a href="cards.html">Feed</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" id="nomeInput" placeholder="Nome">
+                <input type="text" id="corInput" placeholder="Cor">
+                <input type="text" id="racaInput" placeholder="Raça">
+                <button id="buscarBtn">Buscar</button>
+            </div>
+        </div>
+        
+    </header>
+
+    <div class="container" id="cards-container">
+        <!-- Cards dos Pets serão exibidos aqui -->
+    </div>
+
+    <script src="./JS/cards.js"></script>
+</body>
+
+</html>

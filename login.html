@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/login.css">
+    <title>Tela de Login</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="registrar-opcao">
+            <header>Registre-se</header>
+
+            <div class="redes-sociais">
+                <button onclick="window.open('https://accounts.google.com/', '_blank')">
+                    <i class='bx bxl-google'></i> Usar Google
+                </button>
+                <button onclick="window.open('https://www.facebook.com', '_blank')">
+                    <i class='bx bxl-facebook'></i> Usar Facebook
+                </button>
+            </div>
+
+            <div class="separador">
+                <div class="linha"></div>
+                <p>Ou</p>
+                <div class="linha"></div>
+            </div>
+
+            <form>
+                <input type="text" placeholder="Nome completo" required>
+                <input type="email" placeholder="Escreva seu email" required>
+                <input type="password" placeholder="Senha" required>
+                <input type="password" placeholder="Confirmar Senha" required>
+                <a class="forget" href="#">Esqueceu a senha?</a>
+                <button type="submit" class="btn">Registrar</button>
+            </form>
+
+        </div>
+
+        <div class="login-opcao">
+            <header>Login</header>
+
+            <div class="redes-sociais">
+                <button onclick="window.open('https://accounts.google.com/', '_blank')">
+                    <i class='bx bxl-google'></i> Usar Google
+                </button>
+                <button onclick="window.open('https://www.facebook.com', '_blank')">
+                    <i class='bx bxl-facebook'></i> Usar Facebook
+                </button>
+            </div>
+
+            <div class="separador">
+                <div class="linha"></div>
+                <p>Ou</p>
+                <div class="linha"></div>
+            </div>
+
+            <form>
+                <input type="email" placeholder="Digite seu email" required>
+                <input type="password" placeholder="Senha" required>
+                <a href="#">Esqueceu a senha?</a>
+                <button type="submit" class="btn">Entrar</button>
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="./JS/script.js"></script>
+    <script src="./JS/getUsers.js"></script>
+</body>
+
+</html>

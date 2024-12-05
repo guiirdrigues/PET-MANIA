@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição da sua loja de pets">
+    <title>Tela Inicial - Loja de Pets</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/pets.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <!-- Logo da sua loja de pets -->
+            <img src="https://www.creativefabrica.com/wp-content/uploads/2021/04/10/Pet-shop-animals-logo-template-Graphics-10636868-1-1-580x386.png" alt="Logo da Loja de Pets" class="logo">
+    
+            <!-- Barra de pesquisa centralizada -->
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Pesquisar...">
+                <button type="submit" onclick="searchPosts()">Buscar</button>
+            </div>
+
+            <!-- Ícone de login e mensagens -->
+            <div class="login-icon">
+                <i class="fas fa-user"></i>
+                <div class="login-messages">
+                    <span>Entrar</span>
+                    <span>Cadastre-se</span>
+                    <button class="login-button" onclick="window.location.href='login.html'">Entrar</button>
+                </div>
+            </div>
+
+            <!-- Opções de navegação -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Pagina Inicial</a></li>
+                    <li><a href="cadastro.html" target="_blank">Cadastro</a></li>
+                    <li><a href="cards.html" target="_blank">Feed</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Container Principal para o conteúdo -->
+    <div class="container">
+        <div class="container-categorias">
+            <div class="categoria">
+                <img src="./img/cao.png" alt="Cachorro">
+                <h2>Cachorro</h2>
+                <ul class="submenu">
+                    <li><a href="#">Rações</a></li>
+                    <li><a href="#">Brinquedos</a></li>
+                    <li><a href="#">Acessórios</a></li>
+                    <li><a href="#">Saúde</a></li>
+                </ul>
+            </div>
+            <div class="categoria">
+                <img src="./img/gatinho.png" alt="Gato">
+                <h2>Gato</h2>
+                <ul class="submenu">
+                    <li><a href="#">Rações</a></li>
+                    <li><a href="#">Brinquedos</a></li>
+                    <li><a href="#">Acessórios</a></li>
+                    <li><a href="#">Saúde</a></li>
+                </ul>
+            </div>
+            <div class="categoria">
+                <img src="./img/fish cartoon.png" alt="Peixe">
+                <h2>Peixe</h2>
+                <ul class="submenu">
+                    <li><a href="#">Rações</a></li>
+                    <li><a href="#">Aquários</a></li>
+                    <li><a href="#">Decoração</a></li>
+                    <li><a href="#">Saúde</a></li>
+                </ul>
+            </div>
+            <div class="categoria">
+                <img src="./img/passaro.png" alt="Pássaro">
+                <h2>Pássaro</h2>
+                <ul class="submenu">
+                    <li><a href="#">Rações</a></li>
+                    <li><a href="#">Brinquedos</a></li>
+                    <li><a href="#">Acessórios</a></li>
+                    <li><a href="#">Saúde</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carrossel de imagens de filhotes -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="https://moewalls.com/wp-content/uploads/2023/04/blue-fish-thumb-728x410.jpg" alt="Peixe">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://moewalls.com/wp-content/uploads/2023/10/cat-swimming-in-the-water-thumb-364x205.jpg" alt="Gato">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://moewalls.com/wp-content/uploads/2022/10/shiba-inu-relaxing-thumb-728x410.jpg" alt="Filhote de cachorro dormindo">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+
+    <!-- Seção de feed de posts de animais -->
+    <section class="animal-feed">
+        <h2>Feed de Posts de Animais</h2>
+        <div class="post-container">
+            <div class="post" data-title="Reflexão">
+                <img src="https://luzdoespiritismo.com/wp-content/uploads/2021/02/Grey-Photo-Black-History-Month-Instagram-Post-2.png" alt="Post 1">
+                <div class="post-content">
+                    <h3>Reflexão</h3>
+                    <p>Faz pensarmos sobre a vida dos pets</p>
+                </div>
+        </div>
+        <div class="post" data-title="Dia dos animais de Rua">
+            <img src="https://img.ahazou.com/tr:n-ahzdcb-post/ahz-posts/b0d7ed3d-9321-47a4-9b55-3a2fbfdecece/midia/post-8e51e195-47c3-4939-9ebc-3465155f6637.jpeg" alt="Post 2">
+            <div class="post-content">
+                <h3>Dia dos animais de Rua</h3>
+                <p>A data foi lançada por organizações holandesas como uma forma de ajudar a diminuir o número de animais abandonados.</p>
+            </div>
+        </div>
+        <div class="post" data-title="Doação no periodo de inverno">
+            <img src="https://suzanapolis.sp.gov.br/portalImages?id=6780" alt="Post 3">
+            <div class="post-content">
+                <h3>Doação no periodo de inverno</h3>
+                <p>Faça sua doação: Cobertores, ração, e água potável</p>
+            </div>
+        </div>
+        <div class="post" data-title="Lei de proibição de vendas">
+            <img src="https://realtec.com.br/wp-content/uploads/2018/05/venda-de-animais-1200x480.jpg" alt="Post 4">
+            <div class="post-content">
+                <h3>Lei de proibição de vendas</h3>
+                <p>O Projeto de Lei nº 523/23 previa a proibição da venda de gatos, cachorros e pássaros domésticos por pessoas físicas e comércios não autorizados.</p>
+            </div>
+        </div>
+        <div class="post" data-title="Dia Mundial dos animais">
+            <img src="https://www.designi.com.br/images/preview/10043571.jpg" alt="Post 5">
+            <div class="post-content">
+                <h3>Dia Mundial dos animais</h3>
+                <p>O Dia Mundial dos Animais é comemorado todos os anos em 4 de Outubro. </p>
+            </div>
+        </div>
+        <div class="post" data-title="Incentivos para adotar um pet">
+            <img src="https://cdn.pensador.com/img/imagens/le/ge/legenda_para_fotos_de_cachorros_4.jpg?auto_optimize=low&width=655" alt="Post 6">
+            <div class="post-content">
+                <h3>Incentivos para adotar um pet</h3>
+                <p>A presença de um animal dentro de casa pode ajudar a reduzir os níveis de ansiedade e estresse.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>CRUD de Pets</h3>
+            <p>Nosso sistema de gerenciamento de pets utiliza métodos de API para realizar as operações de CRUD (Create, Read, Update, Delete):</p>
+            <ul>
+                <li><strong>Login:</strong> Utilizamos uma API de autenticação para permitir que os usuários façam login em suas contas e acessem recursos protegidos.</li>
+                <li><strong>GET:</strong> Através do método GET, os usuários podem visualizar a lista de pets disponíveis para adoção, bem como os detalhes de um pet específico.</li>
+                <li><strong>Filtro:</strong> Implementamos uma funcionalidade de filtro que permite aos usuários refinar sua busca por pets com base em critérios específicos, como raça, idade e localização.</li>
+                <li><strong>POST:</strong> Os usuários podem cadastrar novos pets para adoção utilizando o método POST, fornecendo informações detalhadas sobre o animal.</li>
+                <li><strong>DELETE:</strong> Caso um pet seja adotado ou não esteja mais disponível, os administradores podem remover o registro do pet utilizando o método DELETE.</li>
+                <li><strong>PUT:</strong> Os administradores também têm a capacidade de atualizar as informações de um pet existente utilizando o método PUT, garantindo que os dados estejam sempre precisos e atualizados.</li>
+            </ul>
+            <p>Esses métodos de API nos permitem oferecer uma experiência completa e eficiente para os usuários que desejam adotar um pet, garantindo que eles tenham acesso às informações mais recentes e possam interagir com nosso sistema de forma intuitiva.</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 Adote um Pet. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+    <!-- Botão "Voltar ao topo" -->
+    <button id="btnTop" title="Voltar ao topo">&#8593;</button>
+
+    <!-- Adicione o script JavaScript necessário, como para o carrossel -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./JS/pets.js"></script>
+    <script src="./JS/post.js"></script>
+    <script src="./JS/efeito.js"></script>
+</body>
+
+</html>

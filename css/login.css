@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    background-image: url('https://images7.alphacoders.com/333/333649.jpg');
+    background-position: 30% 45%;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    position: relative;
+    width: 460px;
+    height: 640px;
+    border-radius: 12px;
+    padding: 20px 30px 120px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.login-opcao{
+    position:  absolute;
+    left: 50%;
+    bottom: -88%;
+    transform: translateX(-50%);
+    width: calc(100% + 180px);
+    padding: 20px 140px;
+    background: black;
+    border-radius: 290px;
+    height: 100%;
+    transition: all 0.6s ease;
+}
+
+.login-opcao header,
+.registrar-opcao header{
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login-opcao header{
+    color: white;
+}
+
+.redes-sociais{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.redes-sociais button{
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.login-opcao .redes-sociais button{
+    border: 1px solid #000;
+}
+
+.login-opcao .redes-sociais button i,
+.registrar-opcao .redes-sociais button i{
+    font-size: 25px;
+}
+
+.separador{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.separador .linha{
+    width: 100%;
+    height: 1px;
+    background: white;
+}
+
+.separador p{
+    color: white;
+}
+
+.login-opcao .separador p{
+    color: white;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+form input{
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.login-opcao input{
+    border: 1px solid #aaa;
+}
+
+form a{
+    color: white;
+}
+
+.registrar-opcao form a{
+    color: #ffffff;
+}
+
+form .btn{
+    margin-top: 15px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login-opcao .btn{
+    background: #ffffff;
+    color: #000000;
+    border: none;
+}
+
+.container.ativar .login-opcao {
+    bottom: -12%;
+    border-radius: 220px;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.6s ease; /* Adicionado */
+}
+
+.container.ativar .login-opcao header{
+    opacity: 1;
+}
+
+.container.ativar .registrar-opcao header{
+    opacity: 0.6;
+}
+
